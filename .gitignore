@@ -1,0 +1,11 @@
+# Local release staging. Every past welm-<version>.zip plus the generated
+# appcast.xml live here — generate_appcast needs the full history of builds in
+# one directory to produce a correct feed (and deltas later).
+#
+# These are release *assets*, uploaded to the `releases` tag with
+# `gh release upload`. They are deliberately not tracked here: a committed copy
+# alongside the uploaded one is an invitation to edit the wrong appcast.
+#
+# Losing this directory means re-downloading every published zip before the
+# next generate_appcast run. Back it up.
+dist/
