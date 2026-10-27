@@ -27,3 +27,17 @@ Download the latest `welm-<version>.zip` from the
 `/Applications`. The app updates itself from then on.
 
 Builds are Developer ID signed and notarized by Apple.
+
+## Internal channel
+
+Internal test builds ("welm Internal", a separate app that installs beside welm and talks to
+the development backend) live on a second long-lived release tagged
+[`internal`](../../releases/tag/internal), with its own appcast:
+
+```
+appcast   https://github.com/sixmoraltales/welm-releases/releases/download/internal/appcast.xml
+prefix    https://github.com/sixmoraltales/welm-releases/releases/download/internal/
+```
+
+They are not for general use: they point at a test backend and carry features that are not
+in the public app.

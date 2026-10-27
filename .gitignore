@@ -9,3 +9,6 @@
 # Losing this directory means re-downloading every published zip before the
 # next generate_appcast run. Back it up.
 dist/
+
+# Same thing for the internal channel (`internal` tag, welm Internal builds).
+dist-internal/
